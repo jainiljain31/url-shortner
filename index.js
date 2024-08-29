@@ -8,7 +8,7 @@ const userRoute = require("./routes/user");
 const { connectToMongoDB } = require("./connect");
 const { restrictToLoggedinUserOnly ,checkAuth} = require("./middleware/auth");
 const app = express();
-const PORT = 8001;
+const PORT = 8000;
 
 app.use(express.json());
 app.use(cookieParser());
