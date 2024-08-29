@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
 
-connectToMongoDB("mongodb://127.0.0.1/short-url").then(() =>
+connectToMongoDB("mongodb+srv://jainiljain31:jainiljain@cluster0.sitx6.mongodb.net").then(() =>
   console.log("Mongodb Connected")
 );
 
